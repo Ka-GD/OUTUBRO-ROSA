@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* estilo da  header */
+header {
+  background-color: #ff69b4;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #E4EEF1;
+}
+
+a {
+  text-decoration: none;
+  color: #E4EEF1;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #c03176;
+  border-radius: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos da main */
+.primeiraimg {
+  background-color: #FFD9EC;
+  display: flex;
+  height: 50vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.primeiraimg p {
+  font-size: 25px;
+  color: #000000;
+  text-align: left;
+  max-width: 40%;
+}
+.primeiraimg img {
+  height: 45vh;
+  width: 30vw;
+}
+
+.segundaimg {
+  background-color: #ff69b4;
+  display: flex;
+  height: 40vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.segundaimg p {
+  font-size: 25px;
+  color: #E4EEF1;
+  text-align: left;
+  max-width: 40%;
+}
+.segundaimg img {
+  height: 35vh;
+  width: 35vw;
+}
+
+.imgs {
+  background-color: #FFD9EC;
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
+  align-items: center;
+}
+.imgs img {
+  height: 35vh;
+  width: 20vw;
+}
+
+/* estilo do Rodapé */
+footer {
+  background-color: #ff69b4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+footer p {
+  color: #E4EEF1;
+  font-size: 20px;
+  text-align: center;
+}
+
+.icones a:hover {
+  background-color: #FFD9EC;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    height: 16vh;
+  }
+  .primeiraimg {
+    flex-direction: column-reverse;
+    height: 90vh;
+    align-items: center;
+  }
+  .segundaimg {
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+  }
+  .imgs {
+    display: flex;
+    height: 50vh;
+    align-items: center;
+  }
+  .primeiraimg p {
+    font-size: 22px;
+    text-align: center;
+    max-width: 90%;
+  }
+  .segundaimg p {
+    font-size: 22px;
+    text-align: center;
+    max-width: 90%;
+  }
+  .primeiraimg img {
+    max-height: 35vh;
+    width: 35vw;
+  }
+  .segundaimg img {
+    max-height: 35vh;
+    width: 50vw;
+  }
+  .imgs img {
+    max-height: 25vh;
+  }
+  footer {
+    display: flex;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
